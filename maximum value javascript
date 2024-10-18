@@ -1,0 +1,10 @@
+function read(){
+    let max=0,a
+    for(let i=1;i<=10;i++){
+      a=parseInt(prompt("Enter a number"))
+      if(a>max)
+        max=a
+    }
+    console.log('largest value=${max} '+max)
+}
+read()
