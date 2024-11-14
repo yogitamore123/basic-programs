@@ -1,0 +1,6 @@
+<script>
+    document.write("Welcome In Java");
+    document.write("<br>A");
+    document.write("<br>B");
+    document.write("<br>C");
+</script>
