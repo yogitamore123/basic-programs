@@ -1,0 +1,16 @@
+<script>
+    function f1(a,b,c){
+       document.write("<br>F1 executed....");
+       document.write("<br>a : "+a);
+       document.write("<br>b : "+b);
+       document.write("<br>c : "+c);
+       return a + b + c;
+    }
+    
+    var x = function(){
+        document.write("Function Expression executed...");
+    };
+    var result = f1(10,20,30);
+    document.write("<br>Resutl : "+result);
+    x();
+</script>
