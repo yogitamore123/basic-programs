@@ -1,0 +1,17 @@
+<script>
+    function f1(){
+        console.log("Function Statement Is Executed...");
+    }
+    const f2 = function(){
+        console.log("Function Expression Is Executed....");
+    }
+    const f3 = ()=>{
+        console.log("Arrow Function Is Executed....");
+    }
+    f1();
+    f2();
+    f3();
+    (function(){
+        console.log("IIFE Executed....");
+    }());
+</script>
