@@ -1,0 +1,11 @@
+<script>
+    function f1(){
+        if(true){
+            let x = 100;
+            console.log("Inside Block : "+x);
+        }
+        console.log("Outside Block : "+x);
+    }
+
+    f1();
+</script>
