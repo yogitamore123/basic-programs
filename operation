@@ -1,0 +1,18 @@
+<script>
+    function operation(a,b,callback){
+      if(typeof(a)!="number" || typeof(b)!="number")
+        callback(new Error("invalid input[only numbers are allowed]"));
+      else{
+        let result = a + b;
+        console.log("Addition : "+result);
+        callback(null,result);
+      }  
+    }
+
+    operation(20,10,function(err,result){
+        if(err)
+          console.log(err);
+        else 
+          result%2 ? console.log("Odd") : console.log("Even");
+    });
+</script>
