@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <%-include('_bootstrap.ejs')%>
+    </head>
+    <body>
+        <%-include('__header.ejs')%>
+        <div class="container mt-4">
+            <form action="/product/edit" method="post">
+                <% if (item) { %>
+                <input type="hidden" name="id" value="<%=item.subproduct_id%>"/>
+                <div class="form-group">
+                    <input value="<%=item.subproduct_name%>" name="subproduct_name" type="text" placeholder="Enter product name" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <input value="<%=item.price%>" name="price" type="text" placeholder="Enter product price" class="form-control"/>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-success">UPDATE</button>
+                </div>
+                <% } else { %>
+                    <p>Product not found!</p>
+                <% } %>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <%-include('_bootstrap.ejs')%><script>
+            function redirectToCategory() {
+                window.location.href = "/product/view-pro";
+            }
+        </script>
+        <style>
+            form div {
+                margin-bottom: 15px; 
+            }
+        </style>
+
+    </head>
+    <body>
+        <%-include('__header.ejs')%>
+        <div class="container mt-4">
+            <form action="/product/view-pro" method="post">
+                <div>
+                <button type="button" class="btn btn-primary" onclick="redirectToCategory()">ELECTRONICS</button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary" onclick="redirectToCategory()">COSMETICS</button>
+            </div>
+                
+            </form>
+        </div>
+    </body>
+</html>
